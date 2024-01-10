@@ -16,6 +16,10 @@ main{
     display: none;
 }
 
+.descricao-card{
+    color: black;
+}
+
 @media (max-width:760px){
     main{
         display:block;

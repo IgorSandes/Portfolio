@@ -1,0 +1,29 @@
+
+.texto-menor {
+    font-size: 13px;
+}
+
+.divs-facilidades {
+    width: 325px;
+}
+.texto{
+    color: white;
+}
+main{
+    display: flex;
+}
+.itens-curriculo{
+    display: none;
+}
+
+@media (max-width:760px){
+    main{
+        display:block;
+    }
+    .itens-curriculo{
+        display:block;
+    }
+}
+footer{
+    width: 100%;
+}

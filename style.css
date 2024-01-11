@@ -6,6 +6,14 @@
 .divs-facilidades {
     width: 325px;
 }
+
+.divs-facilidades a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
 .texto{
     color: white;
 }

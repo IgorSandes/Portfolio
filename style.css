@@ -51,7 +51,23 @@ body::before {
   padding: 1rem 0;
 }
 
-.navbar-brand img { height: 34px; }
+.brand-text {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--text-primary) !important;
+  text-decoration: none;
+  line-height: 1;
+}
+.brand-dot {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 1.5rem;
+  line-height: 0;
+  vertical-align: middle;
+}
 
 .navbar-toggler {
   border: 1px solid var(--border);

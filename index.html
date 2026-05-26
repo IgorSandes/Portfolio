@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./assets/iconenav.png" type="image/x-icon">
-  <title>Igor Sandes Brun</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Igor Sandes Brun — Desenvolvedor Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="bg-black">
+<body>
 
-  <nav class="navbar navbar-expand-md bg-black navbar-dark">
-    <div class="container-fluid">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md">
+    <div class="container">
       <a class="navbar-brand" href="./index.html">
-        <h1 class="m-0"><img class="d-block" src="./assets/logo1.png" alt="Logo do Portfolio Igor Sandes"></h1>
+        <img src="./assets/logo1.png" alt="Igor Sandes">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir menu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto">
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto gap-1">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link active" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./sobre.html">Sobre</a>
@@ -37,235 +40,265 @@
     </div>
   </nav>
 
-
-
-  <div class="container row mx-auto g-4 m-5 bg-black">
-
-    <div class="card m-0 text-bg-dark bg-black" style="max-width: auto;">
-      <div class="row g-6 m-0 p-0">
-        <div class="col-md-4 text-center">
-          <img src="./imags/ft2.png" class="img-fluid m-3 rounded " alt="Foto de perfil">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-md-4 text-center fade-in-up">
+          <img src="./imags/ft2.png" class="hero-photo" alt="Foto de perfil de Igor Sandes">
         </div>
-        <div class="col-md-8 ">
-          <div class="card-body ">
-            <h2 class="card-title text-center m-3">Igor Sandes Brun</h2>
-            <p class="card-text">Acredito firmemente que a tecnologia é uma poderosa aliada para melhorar a qualidade de vida das pessoas.
-              Sou comunicativo e proativo, sempre buscando novas soluções para otimizar os serviços e processos.<br>
-              Já realizei projetos com HTML, CSS, JavaScript, Bootstrap, React, Node.Js, Express e MongoDB.</p>
+        <div class="col-md-8 fade-in-up delay-1">
+          <p class="hero-eyebrow">Olá, sou</p>
+          <h1 class="hero-name gradient-text">Igor Sandes Brun</h1>
+          <p class="hero-subtitle">Desenvolvedor Web Full-Stack</p>
+          <p class="hero-bio">
+            Acredito que a tecnologia é uma poderosa aliada para melhorar a qualidade de vida das pessoas.
+            Comunicativo e proativo, sempre buscando novas soluções para otimizar serviços e processos.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML & CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">MongoDB</span>
+          </div>
+          <div class="hero-actions">
+            <a href="./sobre.html" class="btn-primary-grad">
+              <i class="bi bi-person-lines-fill"></i> Sobre mim
+            </a>
+            <a href="https://github.com/IgorSandes" target="_blank" class="btn-outline-grad">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/igorsandesbr" target="_blank" class="btn-outline-grad">
+              <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <h2 class="text-center texto">Projetos</h2>
-    <div class="col-12 col-md-6 col-xxl-4">
-      <div>
-        <div class="card">
-          <a href="https://conecta-mentor.vercel.app/" target="_blank">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="180" src="./imags/conecta-mentor.png"
-              alt="e-commerce capítulo certo">
-          </a>
-          <div class="card-header bg-white text-bg-dark rounded">
-            <p class="text-center bg-black card-text rounded">
-              Micro-SaaS
-            </p>
-            <p class="descricao-card">
-              Descrição: Projeto em desenvolvimento.
-            </p>
-            <p class="descricao-card">
-              Tecnologias: Next.js, TypeScript, PostgreSQL, ORM.
-            </p>
-            <p class="text-center">
-              <a href="https://github.com/IgorSandes/conecta-mentor" target="_blank"><img
-                  src="./assets/github.png" alt="Icone do GitHub"></a>
-            </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section">
+    <div class="container">
+      <h2 class="section-title">Projetos</h2>
+      <div class="row g-4">
+
+        <div class="col-12 fade-in-up">
+          <div class="project-card project-card--featured">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div class="project-img-wrapper h-100">
+                  <a href="https://conecta-mentor.vercel.app/" target="_blank">
+                    <img src="./imags/conecta-mentor.png" alt="Conecta Mentor" style="height: 100%; min-height: 260px;">
+                    <div class="project-overlay"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="project-body h-100 justify-content-center" style="padding: 2rem 2.25rem;">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <p class="project-type m-0">Micro-SaaS</p>
+                    <span class="featured-badge"><i class="bi bi-star-fill"></i> Destaque</span>
+                  </div>
+                  <h3 class="project-title" style="font-size: 1.5rem; margin-bottom: 0.75rem;">Conecta Mentor</h3>
+                  <p class="project-desc" style="font-size: 0.9rem;">
+                    Plataforma em desenvolvimento para conectar mentores e mentorados de forma inteligente.
+                    Autenticação completa, perfis, agendamento e muito mais.
+                  </p>
+                  <p class="project-tech">Next.js · TypeScript · PostgreSQL · ORM</p>
+                  <div class="project-links" style="border-top: 1px solid var(--border); padding-top: 1rem; margin-top: 1rem;">
+                    <a href="https://conecta-mentor.vercel.app/" target="_blank" class="project-link featured-link">
+                      <i class="bi bi-arrow-up-right-square"></i> Ver Demo
+                    </a>
+                    <a href="https://github.com/IgorSandes/conecta-mentor" target="_blank" class="project-link">
+                      <i class="bi bi-github"></i> Código
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-6 col-xxl-4">
-      <div>
-        <div class="card">
-          <a href="https://e-commerce-beryl-three-62.vercel.app/" target="_blank">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="180" src="./imags/capitulo-certo.jpg"
-              alt="e-commerce capítulo certo">
-          </a>
-          <div class="card-header bg-white text-bg-dark rounded">
-            <p class="text-center bg-black card-text rounded">
-              E-Commerce de Iivros
-            </p>
-            <p class="descricao-card">
-              Descrição: Projeto em desenvolvimento.
-            </p>
-            <p class="descricao-card">
-              Tecnologias: HTML, CSS, JavaScript, Node.js.
-            </p>
-            <p class="text-center">
-              <a href="https://github.com/IgorSandes/E-Commerce_Livros.git" target="_blank"><img
-                  src="./assets/github.png" alt="Icone do GitHub"></a>
-            </p>
+
+        <div class="col-12 col-md-6 col-xl-4 fade-in-up delay-1">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <a href="https://e-commerce-beryl-three-62.vercel.app/" target="_blank">
+                <img src="./imags/capitulo-certo.jpg" alt="E-Commerce de Livros">
+                <div class="project-overlay"></div>
+              </a>
+            </div>
+            <div class="project-body">
+              <p class="project-type">E-Commerce</p>
+              <h3 class="project-title">E-Commerce de Livros</h3>
+              <p class="project-desc">Loja online de livros com carrinho de compras. Projeto em desenvolvimento.</p>
+              <p class="project-tech">HTML · CSS · JavaScript · Node.js</p>
+              <div class="project-links">
+                <a href="https://e-commerce-beryl-three-62.vercel.app/" target="_blank" class="project-link">
+                  <i class="bi bi-arrow-up-right-square"></i> Demo
+                </a>
+                <a href="https://github.com/IgorSandes/E-Commerce_Livros.git" target="_blank" class="project-link">
+                  <i class="bi bi-github"></i> Código
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-md-6 col-xxl-4">
-      <div>
-        <div class="card">
-          <a href="https://rdtechnobitt.netlify.app/" target="_blank">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="180" src="./imags/rd-tech.jpg"
-              alt="Site de Serviços">
-          </a>
-          <div class="card-header bg-white text-bg-dark rounded">
-            <p class="text-center bg-black card-text rounded">
-              Site de Serviços
-            </p>
-            <p class="descricao-card">
-              Descrição: Projeto concluído
-            </p>
-            <p class="descricao-card">
-              Tecnologias: Bootstrap, JavaScript, consumo de API.
-            </p>
-            <p class="text-center">
-              <a href="https://github.com/IgorSandes/Alura/tree/main/Bootstrap/R%26D_TECHNO-BITT" target="_blank"><img
-                  src="./assets/github.png" alt="Icone do GitHub"></a>
-            </p>
+        <div class="col-12 col-md-6 col-xl-4 fade-in-up delay-2">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <a href="https://rdtechnobitt.netlify.app/" target="_blank">
+                <img src="./imags/rd-tech.jpg" alt="R&D Techno-Bitt">
+                <div class="project-overlay"></div>
+              </a>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Site de Serviços</p>
+              <h3 class="project-title">R&D Techno-Bitt</h3>
+              <p class="project-desc">Site institucional com consumo de API e componentes interativos.</p>
+              <p class="project-tech">Bootstrap · JavaScript · Consumo de API</p>
+              <div class="project-links">
+                <a href="https://rdtechnobitt.netlify.app/" target="_blank" class="project-link">
+                  <i class="bi bi-arrow-up-right-square"></i> Demo
+                </a>
+                <a href="https://github.com/IgorSandes/Alura/tree/main/Bootstrap/R%26D_TECHNO-BITT" target="_blank" class="project-link">
+                  <i class="bi bi-github"></i> Código
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-md-6 col-xxl-4">
-      <div>
-        <div class="card">
-          <a href="https://alura-wb1v.vercel.app/" target="_blank">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="180" src="./imags/jogo-numero-secreto.jpg"
-              alt="Jogo Número Secreto">
-          </a>
-          <div class="card-header bg-white text-bg-dark rounded">
-            <p class="text-center bg-black card-text rounded">
-              Jogo Número Secreto
-            </p>
-            <p class="descricao-card">
-              Descrição: Projeto concluído.
-            </p>
-            <p class="descricao-card">
-              Tecnologias: HTML, CSS, JavaScript.
-            </p>
-            <p class="text-center">
-              <a href="https://github.com/IgorSandes/Alura/tree/main/JavaScript/jogo-numero-secreto/vrs02/js-curso-2-aula_-"
-                target="_blank"><img src="./assets/github.png" alt="Icone do GitHub"></a>
-            </p>
+        <div class="col-12 col-md-6 col-xl-4 fade-in-up">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <a href="https://alura-wb1v.vercel.app/" target="_blank">
+                <img src="./imags/jogo-numero-secreto.jpg" alt="Jogo Número Secreto">
+                <div class="project-overlay"></div>
+              </a>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Jogo</p>
+              <h3 class="project-title">Jogo Número Secreto</h3>
+              <p class="project-desc">Jogo de adivinhação interativo com feedback em tempo real para o jogador.</p>
+              <p class="project-tech">HTML · CSS · JavaScript</p>
+              <div class="project-links">
+                <a href="https://alura-wb1v.vercel.app/" target="_blank" class="project-link">
+                  <i class="bi bi-arrow-up-right-square"></i> Demo
+                </a>
+                <a href="https://github.com/IgorSandes/Alura/tree/main/JavaScript/jogo-numero-secreto/vrs02/js-curso-2-aula_-" target="_blank" class="project-link">
+                  <i class="bi bi-github"></i> Código
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-md-6 col-xxl-4">
-      <div>
-        <div class="card">
-          <a href="https://organo-phi-orcin.vercel.app/" target="_blank">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="180" src="./imags/organo.jpg"
-              alt="Organograma">
-          </a>
-          <div class="card-header bg-white text-bg-dark rounded">
-            <p class="text-center bg-black card-text rounded">
-              Organograma
-            </p>
-            <p class="descricao-card">
-              Descrição: Projeto em desenvolvimento.
-            </p>
-            <p class="descricao-card">
-              Tecnologias: React.
-            </p>
-            <p class="text-center">
-              <a href="https://github.com/IgorSandes/Alura/tree/main/React" target="_blank"><img
-                  src="./assets/github.png" alt="Icone do GitHub"></a>
-            </p>
+        <div class="col-12 col-md-6 col-xl-4 fade-in-up delay-1">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <a href="https://organo-phi-orcin.vercel.app/" target="_blank">
+                <img src="./imags/organo.jpg" alt="Organograma">
+                <div class="project-overlay"></div>
+              </a>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Aplicação React</p>
+              <h3 class="project-title">Organograma</h3>
+              <p class="project-desc">Aplicação para gerenciamento e visualização de organogramas de equipe.</p>
+              <p class="project-tech">React</p>
+              <div class="project-links">
+                <a href="https://organo-phi-orcin.vercel.app/" target="_blank" class="project-link">
+                  <i class="bi bi-arrow-up-right-square"></i> Demo
+                </a>
+                <a href="https://github.com/IgorSandes/Alura/tree/main/React" target="_blank" class="project-link">
+                  <i class="bi bi-github"></i> Código
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-md-6 col-xxl-4">
-      <div>
-        <div class="card">
-          <a href="https://github.com/IgorSandes/E-Commerce_Livros/tree/main/Cap%C3%ADtulo%20Certo%20meu%20perfil/node.js/API-Livros"
-            target="_blank">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="180" src="./imags/api-livros.jpg"
-              alt="API-node-express-mongodb">
-          </a>
-          <div class="card-header bg-white text-bg-dark rounded">
-            <p class="text-center bg-black card-text rounded">
-              API Rest
-            </p>
-            <p class="descricao-card">
-              Descrição: Projeto concluído.
-            </p>
-            <p class="descricao-card">
-              Tecnologias: Node.js, Express e MongoDB.
-            </p>
-            <p class="text-center">
-              <a href="https://github.com/IgorSandes/E-Commerce_Livros/tree/main/Cap%C3%ADtulo%20Certo%20meu%20perfil/node.js/API-Livros"
-                target="_blank"><img src="./assets/github.png" alt="Icone do GitHub"></a>
-            </p>
+        <div class="col-12 col-md-6 col-xl-4 fade-in-up delay-2">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <a href="https://github.com/IgorSandes/E-Commerce_Livros/tree/main/Cap%C3%ADtulo%20Certo%20meu%20perfil/node.js/API-Livros" target="_blank">
+                <img src="./imags/api-livros.jpg" alt="API Rest de Livros">
+                <div class="project-overlay"></div>
+              </a>
+            </div>
+            <div class="project-body">
+              <p class="project-type">API Back-end</p>
+              <h3 class="project-title">API Rest de Livros</h3>
+              <p class="project-desc">API RESTful para gerenciamento de catálogo de livros com CRUD completo.</p>
+              <p class="project-tech">Node.js · Express · MongoDB</p>
+              <div class="project-links">
+                <a href="https://github.com/IgorSandes/E-Commerce_Livros/tree/main/Cap%C3%ADtulo%20Certo%20meu%20perfil/node.js/API-Livros" target="_blank" class="project-link">
+                  <i class="bi bi-github"></i> Código
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col-12 col-md-6 col-xxl-4">
-      <div>
-        <div class="card">
-          <a href="https://github.com/IgorSandes/Alura/tree/main/Bootstrap/Meteora" target="_blank">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="180" src="./imags/meteora.jpg"
-              alt="Loja de Roupas">
-          </a>
-          <div class="card-header bg-white text-bg-dark rounded">
-            <p class="text-center bg-black card-text rounded">
-              Loja de Roupas
-            </p>
-            <p class="descricao-card">
-              Descrição: Projeto em desenvolvimento.
-            </p>
-            <p class="descricao-card">
-              Tecnologias: Bootstrap.
-            </p>
-            <p class="text-center">
-              <a href="https://github.com/IgorSandes/Alura/tree/main/Bootstrap/Meteora" target="_blank"><img
-                  src="./assets/github.png" alt="Icone do GitHub"></a>
-            </p>
+        <div class="col-12 col-md-6 col-xl-4 fade-in-up">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <a href="https://github.com/IgorSandes/Alura/tree/main/Bootstrap/Meteora" target="_blank">
+                <img src="./imags/meteora.jpg" alt="Meteora - Loja de Roupas">
+                <div class="project-overlay"></div>
+              </a>
+            </div>
+            <div class="project-body">
+              <p class="project-type">E-Commerce</p>
+              <h3 class="project-title">Meteora</h3>
+              <p class="project-desc">Loja de roupas com layout responsivo e moderno. Projeto em desenvolvimento.</p>
+              <p class="project-tech">Bootstrap</p>
+              <div class="project-links">
+                <a href="https://github.com/IgorSandes/Alura/tree/main/Bootstrap/Meteora" target="_blank" class="project-link">
+                  <i class="bi bi-github"></i> Código
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
+  </section>
 
-  </div>
-
-  <div class="whats">
-    <a href="https://wa.me/5531994565514?text=Olá, gostaria de mais informações sobre o seu trabalho!" target="_blank">
-      <img src="./assets/whatsapp.png" width="75px" alt="Fale conosco pelo Whatsapp" title="Fale conosco pelo Whatsapp">
-    </a>
-  </div>
-  <section class="pb-4 bg-black text-bg-dark">
-    <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center ">
-      <div class="divs-facilidades align-items-center">
-        <a href="https://www.instagram.com/_igorsandes?igsh=a2dpa3ZzcjlmcXYx&utm_source=qr" target="_blank">
-          <div><i class="bi bi-instagram fs-1"></i></div>
+  <!-- SOCIAL -->
+  <section class="social-section">
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <a href="https://www.instagram.com/_igorsandes?igsh=a2dpa3ZzcjlmcXYx&utm_source=qr" target="_blank" class="social-link">
+          <i class="bi bi-instagram social-icon"></i>
           <div>
-            <div class="ms-3 mvb-1">@_igorsandes</div>
-            <div class="texto-menor ms-3">Siga-me no instagram.</div>
+            <div class="social-name">@_igorsandes</div>
+            <div class="social-handle">Siga-me no Instagram</div>
           </div>
         </a>
       </div>
+    </div>
   </section>
 
-  <footer class="text-center bg-white">
-    <p class="card-text py-3">2024 <i class="bi bi-c-circle"></i> Desenvolvido por Igor Sandes | Portfólio.</p>
+  <!-- FOOTER -->
+  <footer>
+    <p class="m-0">2024 &copy; Desenvolvido por Igor Sandes | Portfólio.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+  <!-- WhatsApp -->
+  <div class="whats">
+    <a href="https://wa.me/5531994565514?text=Olá, gostaria de mais informações sobre o seu trabalho!" target="_blank">
+      <img src="./assets/whatsapp.png" width="65px" alt="Fale pelo WhatsApp" title="Fale pelo WhatsApp">
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
@@ -280,6 +313,6 @@
     })();
   </script>
   <!--End of Tawk.to Script-->
-</body>
 
+</body>
 </html>
